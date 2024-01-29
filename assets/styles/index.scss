@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 23%, rgba(0,212,255,1) 100%);
+    min-height: 100vh;
+}
+
+.main-section {
+    padding: 30px 0 20px;
+
+    .flyer-img {
+        max-width: 450px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        // box-shadow: black .5px .5px 15px;
+    }
+
+    .btn-container {
+        .btn {
+            padding: 6px 20px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .btn-registrarse {
+            color: #08086e;
+        }
+
+        .btn-contacto {
+            background-color: #0289c7;
+            background-color: #0b0b7c;
+            border: none;
+        }
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .main-section {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .flyer-img {
+            max-width: 100%;
+        }
+    }
+}
