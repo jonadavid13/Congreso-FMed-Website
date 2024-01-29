@@ -38,9 +38,11 @@ body {
         }
 
         .btn-contacto {
-            background-color: #0289c7;
             background-color: #0b0b7c;
             border: none;
+        }
+        .btn-contacto:hover {
+            background-color: #09095c;
         }
     }
 }

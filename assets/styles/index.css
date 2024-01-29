@@ -32,9 +32,11 @@ body {
   color: #08086e;
 }
 .main-section .btn-container .btn-contacto {
-  background-color: #0289c7;
   background-color: #0b0b7c;
   border: none;
+}
+.main-section .btn-container .btn-contacto:hover {
+  background-color: #09095c;
 }
 
 @media screen and (max-width: 592px) {
