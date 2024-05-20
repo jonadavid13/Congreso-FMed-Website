@@ -41,6 +41,10 @@ body {
 .main-section .btn-container .btn-contacto:hover {
   background-color: #09095c;
 }
+.main-section .btn-container .btn-programa:hover {
+  background-color: #eeeeee;
+  color: #09095c;
+}
 .main-section .card-trabajos-libres {
   border: solid 2px rgb(236, 240, 243);
   border-radius: 5px;
