@@ -73,19 +73,24 @@ body {
 
         .btn-registrarse {
             color: #08086e;
+            border: 2.5px solid transparent;
+            transition: border-color 0.5s ease-in-out;
         }
 
-        .btn-contacto {
-            background-color: #0b0b7c;
-            border: none;
-        }
-        .btn-contacto:hover {
-            background-color: #09095c;
+        .btn-registrarse.focus {
+            border-color: $bg-blue;
         }
 
-        .btn-programa:hover {
-            background-color: #eeeeee;
-            color: #09095c;
+        @keyframes borderPulse {
+            0% { border-color: $bg-blue; }
+            25% { border-color: #304abd; }
+            50% { border-color: #2687e2; }
+            75% { border-color: #6a54cc; }
+            100% { border-color: transparent; }
+        }
+        
+        .btn-registrarse.focus-anim {
+            animation: borderPulse 2s ease-in-out;
         }
     }
 }
