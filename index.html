@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XI Congreso Científico Internacional de la Facultad de Medicina</title>
+    <title>XII Congreso Científico Internacional de la Facultad de Medicina</title>
     <link rel="icon" type="image/png" href="/assets/img/logo-fmed-square-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16" />
@@ -11,46 +11,53 @@
     <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 <body>
-    <main class="main">
-        <section class="main-section d-flex flex-column align-items-center container-xxl">
-            <img 
-                src="assets/img/Flyer Invitacional - XI Congreso Facultad de Medicina LUZ.jpg" 
-                alt="Flyer XI Congreso Científico Internacional de la Facultad de Medicina"
-                class="flyer-img"
-            >
-            <div class="btn-container d-flex flex-column">
-                <a href="#" target="_blank" class="btn btn-light btn-registrarse d-none">
-                    Registrarse
-                </a>
-                <a 
-                    href="assets/resources/programa-cientifico-2024.pdf" 
-                    target="_blank" 
-                    class="btn btn-primary btn-contacto btn-programa">
-                    Programa Científico
-                </a>
-                <a href="#trabajos-libres" class="btn btn-primary btn-contacto btn-tblibres">
-                    Trabajos libres
-                </a>
-                <a href="https://wa.me/584127863120" target="_blank" class="btn btn-primary btn-contacto">
-                    Contactar
-                </a>
+    <nav class="navbar navbar-expand-md sticky-top">
+        <div class="nav-container container-xxl">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <div class="toggler-group">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <span class="toggler-span">Menú</span>
             </div>
-
-            <div id="trabajos-libres" class="card-trabajos-libres d-flex flex-column align-items-stretch">
-                <h4 class="card-title">Trabajos Libres</h4>
-                <a 
-                    href="/assets/resources/NORMAS XI Congreso 2024 15f.pdf" 
-                    class="btn btn-danger"
-                    target="_blank"
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inscripciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Epónimo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programa Científico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trabajos Libres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Expo Facultad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="main-section d-flex flex-column align-items-center">
+            <picture class="picture-container">
+                <source srcset="assets/img/BannerMobile.jpg" media="(max-width: 576px)">
+                <img 
+                    src="assets/img/Banner Congreso Full.jpg" 
+                    alt="Banner XII Congreso Científico Internacional de la Facultad de Medicina"
+                    class="main-banner"
                 >
-                    Descargar normativa
-                </a>
-                <a 
-                    href="/assets/resources/FORMATO DE ENVIO.doc" 
-                    class="btn btn-primary"
-                    download="FORMATO DE ENVIO.doc"
-                >
-                    Descargar formato de envío
+            </picture>
+            <div class="btn-container d-flex">
+                <a href="https://forms.gle/2P7F8hBtS86jMVXT9" target="_blank" class="btn btn-light btn-registrarse">
+                    Inscribirse
                 </a>
             </div>
         </section>

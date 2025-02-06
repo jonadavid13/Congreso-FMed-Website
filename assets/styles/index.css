@@ -7,29 +7,49 @@
 
 body {
   font-family: "Nunito Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #8eb0d4 0%, #b1cbe2 50%, #b9a3f4 100%);
 }
 
-.main {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 23%, rgb(0, 212, 255) 100%);
-  min-height: 100vh;
+.navbar {
+  background: linear-gradient(90deg, #342380 10%, rgb(46, 48, 170) 70%, rgb(57, 90, 199) 100%);
+  color: white;
+}
+.navbar .nav-container .navbar-nav .nav-link {
+  font-weight: 500;
+  color: inherit;
+}
+.navbar .nav-container .toggler-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .nav-container .toggler-group .navbar-toggler {
+  border-color: white;
+  box-shadow: none;
+}
+.navbar .nav-container .toggler-group .navbar-toggler .navbar-toggler-icon {
+  filter: invert(100%);
 }
 
 .main-section {
-  padding: 20px 0;
+  padding: 0;
 }
-.main-section .flyer-img {
-  max-width: 400px;
-  border-radius: 3px;
-  margin-bottom: 20px;
+.main-section .picture-container {
+  width: 100%;
+  max-width: 2140px;
+}
+.main-section .main-banner {
+  width: 100%;
 }
 .main-section .btn-container {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
 }
 .main-section .btn-container .btn {
   padding: 6px 20px;
-  margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .main-section .btn-container .btn-registrarse {
   color: #08086e;
@@ -45,31 +65,17 @@ body {
   background-color: #eeeeee;
   color: #09095c;
 }
-.main-section .card-trabajos-libres {
-  border: solid 2px rgb(236, 240, 243);
-  border-radius: 5px;
-  padding: 20px 40px;
-  margin-bottom: 30px;
-}
-.main-section .card-trabajos-libres .card-title {
-  color: white;
-  margin-bottom: 16px;
-  text-align: center;
-}
-.main-section .card-trabajos-libres .btn {
-  margin-bottom: 12px;
-  box-shadow: black 1px 1px 4px;
-}
-.main-section .card-trabajos-libres .btn:last-child {
-  margin-bottom: 0;
-}
 
-@media screen and (max-width: 592px) {
-  .main-section {
-    padding: 15px 10px;
+@media screen and (min-width: 769px) {
+  .navbar .nav-container .toggler-group .toggler-span {
+    display: none;
   }
-  .main-section .flyer-img {
-    max-width: 100%;
-    margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .navbar .nav-container .navbar-nav {
+    margin-top: 10px;
+  }
+  .navbar .nav-container .toggler-group .navbar-toggler .navbar-toggler-icon {
+    width: 25px;
   }
 }/*# sourceMappingURL=index.css.map */
