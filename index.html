@@ -1,96 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XII Congreso Científico Internacional de la Facultad de Medicina</title>
-    <link rel="icon" type="image/png" href="/assets/img/logo-fmed-square-128.png" sizes="128x128" />
-    <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles/index.css">
-    <script>
-        
-    </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>XII Congreso Científico Internacional de la Facultad de Medicina</title>
+	<link rel="icon" type="image/png" href="/assets/img/logo-fmed-square-128.png" sizes="128x128" />
+	<link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/styles/index.css">
+	<script>
+
+	</script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md sticky-top">
-        <div class="nav-container container-xxl">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <div class="toggler-group">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <span class="toggler-span">Menú</span>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inscripcion" id="navLink-Inscripciones" onclick="() => animateButton()">Inscripciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Epónimo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Programa Científico</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#trabajos-libres">Trabajos Libres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Expo Facultad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main class="main">
-        <section class="page-section main-section">
-            <picture class="picture-container" id="inscripcion">
-                <source srcset="assets/img/BannerMobile.jpg" media="(max-width: 576px)">
-                <img 
-                    src="assets/img/Banner Congreso Full.jpg" 
-                    alt="Banner XII Congreso Científico Internacional de la Facultad de Medicina"
-                    class="main-banner"
-                >
-            </picture>
-            <div class="btn-container d-flex" id="trabajos-libres">
-                <a href="https://forms.gle/2P7F8hBtS86jMVXT9" id="inscripcionButton" target="_blank" class="btn btn-light btn-registrarse">
-                    Inscribirse
-                </a>
-            </div>
-        </section>
-        <div class="gradient-box one"></div>
-        <section class="page-section trabajos-libres">      
-            <div class="info-container">
-                <h2 class="section-title">Trabajos Libres</h2>
+	<nav class="navbar navbar-expand-md sticky-top">
+		<div class="nav-container container-xxl">
+			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+			<div class="toggler-group">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<span class="toggler-span">Menú</span>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav gap-2">
+					<li class="nav-item">
+						<a class="nav-link" href="#inscripcion" id="navLink-Inscripciones"
+							onclick="() => animateButton()">Inscripciones</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Epónimo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#programa-cientifico">Programa Científico</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#trabajos-libres">Trabajos Libres</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Expo Facultad</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="main">
+		<section class="page-section main-section">
+			<picture class="picture-container" id="inscripcion">
+				<source srcset="assets/img/BannerMobile.jpg" media="(max-width: 576px)">
+				<img src="assets/img/Banner Congreso Full.jpg"
+					alt="Banner XII Congreso Científico Internacional de la Facultad de Medicina" class="main-banner">
+			</picture>
+			<div class="btn-container d-flex" id="programa-cientifico">
+				<a href="https://forms.gle/2P7F8hBtS86jMVXT9" id="inscripcionButton" target="_blank"
+					class="btn btn-light btn-registrarse">
+					Inscribirse
+				</a>
+			</div>
+		</section>
+		<div class="gradient-box one"></div>
+		
+		<section class="page-section programa-cientifico tc-secondary">
+			<div class="info-container text-center">
+				<h2 class="section-title">Programa Científico</h2>
 
-                <p class="section-p">
-                    Nos complace anunciar la apertura de la recepción de trabajos libres científicos. Invitamos a investigadores, profesionales y estudiantes a presentar sus propuestas en diversas áreas de la Ciencias de la Salud.
-                </p>
-                <p class="section-p">
-                    El trabajo libre es una presentación de investigación original realizada por investigadores, profesionales o estudiantes. Estos trabajos abordan temas relevantes y novedosos en el campo de la medicina y la salud. Los autores presentan sus hallazgos a través de pósteres, presentaciones orales o artículos, y los trabajos pueden abarcar áreas como estudios clínicos, investigaciones básicas, avances en tratamientos, y más. La presentación de estos trabajos permite el intercambio de conocimientos, la discusión académica y la actualización de avances científicos entre la comunidad médica.
-                </p>
+				<p class="section-p">La Facultad de Medicina de la Universidad del Zulia y la Academia de Medicina del Zulia se
+					enorgullecen en presentarles el Programa Científico, el cual cuenta con invitados internacionales, nacionales
+					y regionales que impartirán a los asistentes actualización en el ámbito de la salud a través de jornadas,
+					simposios, mesas redondas, talleres, entre otros.</p>
 
-                <div class="span-group">
-                    <span>Para más información: </span>
-                    <a class="email-span" target="_blank" href="mailto:congresofmedacademia@gmail.com">congresofmedacademia@gmail.com</a>
-                </div>
+				<p class="section-p mb-4">El Comité Organizador les invita a participar en tan importante evento que reúne docencia e
+					investigación, la academia, la asistencia y la extensión en las Ciencias de la Salud.</p>
 
-                <p class="mb-2">¡Esperamos tu participación!</p>
-                <p class="section-p emphasis">Comité Organizador</p>
+				<a 
+					class="btn cta-btn btn-light"
+					target="_blank"
+					href="/assets/resources/PROGRAMA_CIENTIFICO_2025.pdf"
+					id="trabajos-libres"
+				>
+					Ver Programa
+				</a>
+			</div>
+		</section>
 
-                <a class="btn-normativa btn btn-light" href="/assets/resources/NORMATIVA PARA TRABAJOS LIBRES 2025.pdf" download="NORMATIVA PARA TRABAJOS LIBRES 2025">
-                    Descargar normativa
-                </a>
-            </div>
-        </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+		<div class="gradient-box two"></div>
+
+		<section class="page-section trabajos-libres">
+			<div class="info-container">
+				<h2 class="section-title">Trabajos Libres</h2>
+
+				<p class="section-p">
+					Nos complace anunciar la apertura de la recepción de trabajos libres científicos. Invitamos a investigadores,
+					profesionales y estudiantes a presentar sus propuestas en diversas áreas de la Ciencias de la Salud.
+				</p>
+				<p class="section-p">
+					El trabajo libre es una presentación de investigación original realizada por investigadores, profesionales o
+					estudiantes. Estos trabajos abordan temas relevantes y novedosos en el campo de la medicina y la salud. Los
+					autores presentan sus hallazgos a través de pósteres, presentaciones orales o artículos, y los trabajos pueden
+					abarcar áreas como estudios clínicos, investigaciones básicas, avances en tratamientos, y más. La presentación
+					de estos trabajos permite el intercambio de conocimientos, la discusión académica y la actualización de
+					avances científicos entre la comunidad médica.
+				</p>
+
+				<div class="span-group">
+					<span>Para más información: </span>
+					<a class="email-span" target="_blank"
+						href="mailto:congresofmedacademia@gmail.com">congresofmedacademia@gmail.com</a>
+				</div>
+
+				<p class="mb-2">¡Esperamos tu participación!</p>
+				<p class="section-p emphasis">Comité Organizador</p>
+
+				<a class="cta-btn btn-normativa btn btn-light" href="/assets/resources/NORMATIVA PARA TRABAJOS LIBRES 2025.pdf"
+					download="NORMATIVA PARA TRABAJOS LIBRES 2025">
+					Descargar normativa
+				</a>
+			</div>
+		</section>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<script src="index.js"></script>
 </body>
+
 </html>
