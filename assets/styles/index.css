@@ -92,17 +92,34 @@ body {
   animation: borderPulse 2s ease-in-out;
 }
 
-.page-section.trabajos-libres {
-  background-color: rgba(35, 35, 126, 0.8156862745);
+.page-section {
   color: white;
 }
-.page-section.trabajos-libres .info-container {
+.page-section .info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 992px;
   padding: 30px 16px 40px;
   text-align: justify;
+}
+.page-section .cta-btn {
+  padding-left: 14px;
+  padding-right: 14px;
+  color: #0e0f58;
+  font-weight: 500;
+}
+.page-section .dark-btn {
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: #23237e;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.page-section.trabajos-libres {
+  background-color: rgba(35, 35, 126, 0.8156862745);
 }
 .page-section.trabajos-libres .info-container .section-p {
   margin-bottom: 25px;
@@ -124,18 +141,27 @@ body {
 .page-section.trabajos-libres .info-container .span-group .email-span:hover {
   color: #8bb6e4;
 }
-.page-section.trabajos-libres .info-container .btn-normativa {
-  padding-left: 14px;
-  padding-right: 14px;
-  color: #0e0f58;
-  font-weight: 500;
+
+.page-section.tc-primary {
+  background-color: #23237e;
+}
+
+.page-section.tc-secondary {
+  background-color: rgba(25, 71, 196, 0.6431372549);
+}
+
+.gradient-box {
+  width: 100%;
+  height: 80px;
 }
 
 .gradient-box.one {
-  display: none;
-  width: 100%;
-  height: 80px;
   background: linear-gradient(0deg, rgba(35, 35, 126, 0.8156862745) 0%, rgba(35, 35, 126, 0) 100%);
+  background: linear-gradient(0deg, rgba(25, 71, 196, 0.64) 0%, rgba(35, 35, 126, 0) 100%);
+}
+
+.gradient-box.two {
+  background: linear-gradient(180deg, rgba(25, 71, 196, 0.64) 0%, rgba(35, 35, 126, 0.82) 100%);
 }
 
 @media screen and (min-width: 769px) {
