@@ -142,6 +142,57 @@ body {
   color: #8bb6e4;
 }
 
+.page-section.premios .info-container {
+  padding: 40px 0;
+}
+.page-section.premios .card-container {
+  width: 768px;
+  padding: 20px 20px 30px;
+  background-color: inherit;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #170b49;
+}
+.page-section.premios .card-container .section-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #191e68;
+}
+.page-section.premios .card-container .premios-list {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+.page-section.premios .card-container .premios-list .list-item {
+  margin-bottom: 5px;
+  text-align: left;
+}
+.page-section.premios .card-container .button-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+}
+.page-section.premios .card-container .button-container .glass-button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #262681;
+  border: none;
+}
+.page-section.premios .card-container .button-container .glass-button:hover {
+  background-color: #1e1e70;
+}
+.page-section.premios .card-container .button-container .glass-button:last-child {
+  margin-bottom: 0;
+}
+
 .page-section.tc-primary {
   background-color: #23237e;
 }
@@ -164,7 +215,22 @@ body {
   background: linear-gradient(180deg, rgba(25, 71, 196, 0.64) 0%, rgba(35, 35, 126, 0.82) 100%);
 }
 
-@media screen and (min-width: 769px) {
+.gradient-box.two-out {
+  background: linear-gradient(180deg, rgba(35, 35, 126, 0.82) 0%, rgba(35, 35, 126, 0.555) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 850px) {
+  .page-section.premios {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .page-section.premios .card-container {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
   .navbar .nav-container .toggler-group .toggler-span {
     display: none;
   }
