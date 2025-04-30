@@ -7,6 +7,9 @@
 }
 
 $bg-blue: rgba(9,9,121,1);
+$darkButton: #23237e;
+$purple: #532685;
+$purpleDark: #473092;
 $nav-light-variant: #9ac1e6;
 $nav-dark-variant: rgb(66, 64, 168);
 $nav-dark-variant-bc: rgb(66, 64, 168);
@@ -49,18 +52,6 @@ body {
     }
 }
 
-.page-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .section-title {
-        font-size: 28px;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-}
 
 .main-section {
     padding: 0;
@@ -88,6 +79,16 @@ body {
             color: #08086e;
             border: 2.5px solid transparent;
             transition: border-color 0.5s ease-in-out;
+            transition: background-color 0.25s ease-in-out;
+        }
+
+        .btn-registrarse:hover {
+            background-color: $purple;
+            color: white;
+        }
+        .btn-registrarse:active {
+            background-color: $purple;
+            color: white;
         }
 
         .btn-registrarse.focus {
@@ -111,6 +112,16 @@ body {
 
 .page-section {
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-title {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 25px;
+    }
 
     .info-container {
         display: flex;
@@ -137,6 +148,9 @@ body {
         border: none;
         color: white;
         font-weight: 500;
+    }
+    .dark-btn:hover {
+        background-color: #181866;
     }
 }
 .page-section.trabajos-libres {
@@ -227,7 +241,35 @@ body {
         }
     }
 }
+.page-section.caminata {
+    padding: 40px 0;
+    background-color: $purpleDark;
 
+    .caminata-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .article-poster {
+            margin-bottom: 20px;
+
+            .poster-picture {
+                max-width: 992px;
+                border-radius: 8px;
+
+                .poster-ls {
+                    max-width: inherit;
+                    border-radius: inherit;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+
+        .form-button {
+            border: solid 1px $darkButton;
+        }
+    }
+}
 
 
 // Estilos generales
@@ -253,6 +295,21 @@ body {
 }
 .gradient-box.two-out {
     background: linear-gradient(180deg, rgba(35,35,126,0.82) 0%, rgba(35, 35, 126, 0.555) 40%,  rgba(0, 0, 0, 0) 100%);
+}
+.gradient-box.purple-in {
+    background: linear-gradient(0deg, rgba(71, 48, 146, 1) 0%, rgb(71, 48, 146, 0.555) 40%,  rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 1080px) {
+    .caminata-article {
+        .article-poster {
+            padding: 0 20px;
+
+            .poster-ls {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -305,5 +362,11 @@ body {
                 font-size: 24px;
             }
         }
+
     }
+    .caminata-article {
+        .article-poster {
+            padding: 0 10px;
+        }
+    } 
 }

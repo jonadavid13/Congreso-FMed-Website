@@ -31,18 +31,6 @@ body {
   filter: invert(100%);
 }
 
-.page-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.page-section .section-title {
-  font-size: 28px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
 .main-section {
   padding: 0;
 }
@@ -67,6 +55,15 @@ body {
   color: #08086e;
   border: 2.5px solid transparent;
   transition: border-color 0.5s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.main-section .btn-container .btn-registrarse:hover {
+  background-color: #532685;
+  color: white;
+}
+.main-section .btn-container .btn-registrarse:active {
+  background-color: #532685;
+  color: white;
 }
 .main-section .btn-container .btn-registrarse.focus {
   border-color: rgb(9, 9, 121);
@@ -94,6 +91,15 @@ body {
 
 .page-section {
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-section .section-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
 }
 .page-section .info-container {
   display: flex;
@@ -116,6 +122,9 @@ body {
   border: none;
   color: white;
   font-weight: 500;
+}
+.page-section .dark-btn:hover {
+  background-color: #181866;
 }
 
 .page-section.trabajos-libres {
@@ -193,6 +202,31 @@ body {
   margin-bottom: 0;
 }
 
+.page-section.caminata {
+  padding: 40px 0;
+  background-color: #473092;
+}
+.page-section.caminata .caminata-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-section.caminata .caminata-article .article-poster {
+  margin-bottom: 20px;
+}
+.page-section.caminata .caminata-article .article-poster .poster-picture {
+  max-width: 992px;
+  border-radius: 8px;
+}
+.page-section.caminata .caminata-article .article-poster .poster-picture .poster-ls {
+  max-width: inherit;
+  border-radius: inherit;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.page-section.caminata .caminata-article .form-button {
+  border: solid 1px #23237e;
+}
+
 .page-section.tc-primary {
   background-color: #23237e;
 }
@@ -219,6 +253,18 @@ body {
   background: linear-gradient(180deg, rgba(35, 35, 126, 0.82) 0%, rgba(35, 35, 126, 0.555) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
+.gradient-box.purple-in {
+  background: linear-gradient(0deg, rgb(71, 48, 146) 0%, rgba(71, 48, 146, 0.555) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 1080px) {
+  .caminata-article .article-poster {
+    padding: 0 20px;
+  }
+  .caminata-article .article-poster .poster-ls {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 850px) {
   .page-section.premios {
     margin-left: 10px;
@@ -244,5 +290,8 @@ body {
   }
   .main .page-section .section-title {
     font-size: 24px;
+  }
+  .caminata-article .article-poster {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=index.css.map */
