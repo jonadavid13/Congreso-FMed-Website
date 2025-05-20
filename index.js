@@ -20,6 +20,36 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const modalFest = new bootstrap.Modal(document.getElementById("modalFest"));
+
+//   const modalImage = getElementById("modalImage");
+  
+//   modalImage.onload(() => {
+//     modalFest.show();
+//   })
+// })
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modalImage = document.getElementById("modalImage");
+  const modalFest = document.getElementById("modalFest");
+  const modalSpinner = document.getElementById("modalSpinner")
+
+  modalImage.src = "/assets/img/FLYER MED FEST 2025.png";
+
+  const myModal = new bootstrap.Modal(modalFest);
+  myModal.show();
+
+  // Evento que se dispara cuando la imagen ha terminado de cargar
+  modalImage.onload = () => {
+
+    // Hacer visible la imagen dentro del modal
+    modalImage.style.visibility = "visible";
+    modalSpinner.classList.add("d-none")
+  };
+});
+
+
 const animateButton = () => {
   if (isAnimating) {
     return
