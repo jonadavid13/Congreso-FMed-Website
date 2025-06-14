@@ -150,6 +150,9 @@ body {
 .page-section.trabajos-libres .info-container .span-group .email-span:hover {
   color: #8bb6e4;
 }
+.page-section.trabajos-libres .info-container .std-btn:hover {
+  color: #08086e;
+}
 
 .page-section.premios .info-container {
   padding: 40px 0;
