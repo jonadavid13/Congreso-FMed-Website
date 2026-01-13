@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>XII Congreso Científico Internacional de la Facultad de Medicina</title>
+	<meta name="description" content="XIII Congreso Científico Internacional de la Facultad de Medicina de la Universidad del Zulia. Del 18 al 22 de mayo de 2026, en el Hotel Tibisay del Lago, Maracaibo, Venezuela.">
+	<title>XIII Congreso Científico Internacional de la Facultad de Medicina</title>
 	<link rel="icon" type="image/png" href="/assets/img/logo-fmed-square-128.png" sizes="128x128" />
 	<link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16" />
@@ -12,7 +13,6 @@
 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/styles/index.css?ver=1.1">
 	<script>
-
 	</script>
 </head>
 
@@ -30,8 +30,8 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav gap-2">
 					<li class="nav-item">
-						<a class="nav-link" href="#inscripcion" id="navLink-Inscripciones"
-							onclick="() => animateButton()">Inscripciones</a>
+						<a class="nav-link" href="#inicio" id="navLink-Inscripciones"
+							onclick="() => animateButton()">Inicio</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Epónimo</a>
@@ -43,12 +43,6 @@
 						<a class="nav-link" href="#trabajos-libres">Trabajos Libres</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#premios">Premios</a>
-					</li>
-					<!-- <li class="nav-item">
-						<a class="nav-link" href="#carrera-caminata">Carrera-Caminata</a>
-					</li> -->
-					<li class="nav-item">
 						<a class="nav-link" href="#">Expo Facultad</a>
 					</li>
 					<li class="nav-item">
@@ -59,48 +53,20 @@
 		</div>
 	</nav>
 	<main class="main">
-		<section class="page-section main-section">
+		<section class="page-section main-section" id="inicio">
 			<picture class="picture-container" id="inscripcion">
-				<source srcset="assets/img/BannerMobile.jpg" media="(max-width: 576px)">
-				<img src="assets/img/Banner Congreso Full.jpg"
-					alt="Banner XII Congreso Científico Internacional de la Facultad de Medicina" class="main-banner">
+				<source srcset="assets/img/banner-congreso-mb.png" media="(max-width: 576px)">
+				<img src="assets/img/banner-congreso-ls (crop).png"
+					alt="XIII Congreso Científico Internacional de la Facultad de Medicina" class="main-banner">
 			</picture>
-			<div class="btn-container d-flex" id="programa-cientifico">
-				<a href="https://forms.gle/2P7F8hBtS86jMVXT9" id="inscripcionButton" target="_blank"
+			<div class="btn-container d-flex d-none" id="programa-cientifico">
+				<a href="#" id="inscripcionButton" target="_blank"
 					class="btn btn-light btn-registrarse">
 					Inscribirse
 				</a>
 			</div>
-
-			
 		</section>
-		<div class="gradient-box one"></div>
-		
-		<section class="page-section programa-cientifico tc-secondary">
-			<div class="info-container text-center">
-				<h2 class="section-title">Programa Científico</h2>
-
-				<p class="section-p">La Facultad de Medicina de la Universidad del Zulia y la Academia de Medicina del Zulia se
-					enorgullecen en presentarles el Programa Científico, el cual cuenta con invitados internacionales, nacionales
-					y regionales que impartirán a los asistentes actualización en el ámbito de la salud a través de jornadas,
-					simposios, mesas redondas, talleres, entre otros.</p>
-
-				<p class="section-p mb-4">El Comité Organizador les invita a participar en tan importante evento que reúne docencia e
-					investigación, la academia, la asistencia y la extensión en las Ciencias de la Salud.</p>
-
-				<a 
-					class="btn cta-btn btn-light"
-					target="_blank"
-					href="/assets/resources/PROGRAMA_CIENTIFICO_2025.pdf"
-					id="trabajos-libres"
-				>
-					Ver Programa
-				</a>
-			</div>
-		</section>
-		<div class="gradient-box two"></div>
-
-		<section class="page-section trabajos-libres">
+		<section class="page-section trabajos-libres" id="trabajos-libres">
 			<div class="info-container">
 				<h2 class="section-title">Trabajos Libres</h2>
 
@@ -127,97 +93,18 @@
 				<p class="section-p emphasis">Comité Organizador</p>
 
 				<div class="button-group d-flex flex-column gap-2">
-					<a class="cta-btn btn-normativa btn btn-light" href="/assets/resources/HORARIO Y HORA DE PRESENTACION - TRABAJOS LIBRES.pdf"
+					<a class="cta-btn btn-normativa btn btn-light d-none" href="#"
 						target="_blank">
 						Horario de presentaciones
 					</a>
-					<a class="std-btn btn btn-outline-light" href="/assets/resources/NORMATIVA PARA TRABAJOS LIBRES 2025.pdf"
+					<a class="std-btn btn btn-outline-light" href="/assets/resources/NORMATIVA PARA TRABAJOS LIBRES 2026.pdf"
 						target="_blank">
 						Descargar normativa
 					</a>
 				</div>
 			</div>
 		</section>
-		<div class="gradient-box two-out"></div>
-
-		<section class="page-section premios" id="premios">
-			<div class="info-container">
-				<div class="card card-container">
-					<h2 class="section-title">Premios</h2>
-
-					<p>En el marco de la celebración del Congreso Científico de la Facultad de Medicina de LUZ y de la Academia de Medicina del Zulia se publican los reglamentos y requisitos para optar a los siguientes premios:	</p>
-
-					<ul class="premios-list">
-						<li class="list-item">Premio Científico “DR. AMÉRICO NEGRETTE”</li>
-						<li class="list-item">Premio Científico “JULIO ARRAGA ZULETA”</li>
-						<li class="list-item">Premio Científico “MARCO TULIO TORRES VERA”</li>
-						<li class="list-item">Premio “JORNADAS CIENTÍFICAS DE LA FACULTAD DE MEDICINA”</li>
-						<li class="list-item">Premio Científico “FLORENCE NIGHTINGALE”</li>
-						<li class="list-item">Premio “DR. FRANCISCO SOLANO NAVA”</li>
-					</ul>
-
-					<div class="button-container">
-						<a 
-							class="glass-button btn btn-dark" 
-							href="/assets/resources/PREMIOS CIENTIFICOS. REGLAMENTOS.pdf" 
-							target="_blank"
-						>
-							Reglamentos
-						</a>
-
-						<a 
-							href="/assets/resources/REQUISITO DE POSTULACION. PREMIOS CIENTIFICOS. INSTRUCCIONES 2025.pdf" 
-							class="glass-button btn btn-dark" 
-							target="_blank"
-						>
-							Requisito de Postulación
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- <div class="gradient-box purple-in"></div> -->
-
-		<!-- <section class="page-section caminata" id="carrera-caminata">
-			<article class="caminata-article">
-				<div class="article-poster">
-					<picture class="poster-picture">
-						<source srcset="assets/img/Caminata-MB.jpg" media="(max-width: 576px)">
-						<img src="assets/img/Caminata-LS.jpg" class="poster-ls" alt="Carrera Caminata 7K Pre-Congreso Científico">
-					</picture>
-				</div>
-				<a href="https://forms.gle/61g37vpJQTeduxHu6" target="_blank" class="btn cta-btn btn-light">
-					Formulario
-				</a>
-			</article>
-		</section> -->
 	</main>
-
-	<div class="modal modal-fest" id="modalFest" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<img 
-						id="modalImage" 
-						class="modal-flyer"
-						src="/assets/img/FLYER MED FEST 2025.png" 
-						alt="MED FEST 2025" 
-					>
-					<div class="w-100 d-flex flex-column align-items-center mt-2">
-						<div class="spinner-border my-3" id="modalSpinner" style="width: 3rem; height: 3rem;" role="status">
-							<span class="visually-hidden">Loading...</span>
-						</div>
-						<a href="https://forms.gle/KaE1ed253kU1hJer9" target="_blank" class="modal-button_dark btn btn-secondary rounded-pill">
-							Más información
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
