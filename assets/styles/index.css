@@ -134,7 +134,7 @@ body {
 .page-section .dark-btn:hover {
   background-color: #181866;
 }
-.page-section .section-p, .page-section .cta-btn, .page-section .btn {
+.page-section .section-p, .page-section .cta-btn, .page-section .btn, .page-section p, .page-section li, .page-section span {
   font-size: 15px;
 }
 
