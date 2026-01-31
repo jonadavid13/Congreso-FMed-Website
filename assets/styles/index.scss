@@ -450,13 +450,14 @@ body {
     .page-section.inscripciones {
         .info-container {
             flex-direction: column;
+            padding: 0;
 
             .info-col:first-child, .info-col:last-child {
                 width: 100%;
             }
 
             .info-col:first-child {
-                margin-bottom: 20px;
+                padding: 12px 0;
                 
                 p {
                     font-size: 28px;
