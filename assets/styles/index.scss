@@ -133,6 +133,9 @@ body {
         padding: 30px 16px 40px;
         text-align: justify;
     }
+    .info-container.md {
+        max-width: 768px;
+    }
 
     .cta-btn {
         $px: 14px;
@@ -230,6 +233,12 @@ body {
         }
         .section-p.emphasis {
             font-weight: 600;
+        }
+        .section-p.mb-sm {
+            margin-bottom: 20px;
+        }
+        .section-p.mb-lg {
+            margin-bottom: 30px;
         }
 
         .span-group {

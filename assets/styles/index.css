@@ -118,6 +118,9 @@ body {
   padding: 30px 16px 40px;
   text-align: justify;
 }
+.page-section .info-container.md {
+  max-width: 768px;
+}
 .page-section .cta-btn {
   padding-left: 14px;
   padding-right: 14px;
@@ -196,6 +199,12 @@ body {
 }
 .page-section.trabajos-libres .info-container .section-p.emphasis {
   font-weight: 600;
+}
+.page-section.trabajos-libres .info-container .section-p.mb-sm {
+  margin-bottom: 20px;
+}
+.page-section.trabajos-libres .info-container .section-p.mb-lg {
+  margin-bottom: 30px;
 }
 .page-section.trabajos-libres .info-container .span-group {
   margin-bottom: 25px;
