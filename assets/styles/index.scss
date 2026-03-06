@@ -225,6 +225,8 @@ body {
     // background: linear-gradient(90deg, #244a9680 10%, #1474ac 70%, #368cbe 100%);
 
     .info-container {
+        padding-bottom: 45px;
+
         .section-p {
             margin-bottom: 25px;
         }
@@ -256,6 +258,10 @@ body {
 
         .std-btn:hover {
             color: #002e4d;
+        }
+
+        .button-group {
+            gap: .75rem;
         }
     }
 }

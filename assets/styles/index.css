@@ -191,6 +191,9 @@ body {
 .page-section.trabajos-libres {
   background-color: #2c5a9e;
 }
+.page-section.trabajos-libres .info-container {
+  padding-bottom: 45px;
+}
 .page-section.trabajos-libres .info-container .section-p {
   margin-bottom: 25px;
 }
@@ -219,6 +222,9 @@ body {
 }
 .page-section.trabajos-libres .info-container .std-btn:hover {
   color: #002e4d;
+}
+.page-section.trabajos-libres .info-container .button-group {
+  gap: 0.75rem;
 }
 
 .page-section.premios .info-container {
