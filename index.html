@@ -5,13 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="XIII Congreso Científico Internacional de la Facultad de Medicina de la Universidad del Zulia. Del 18 al 22 de mayo de 2026, en el Hotel Tibisay del Lago, Maracaibo, Venezuela.">
-	<title>XIII Congreso Científico Internacional de la Facultad de Medicina</title>
+	<title>XIII Congreso Científico Internacional de la Facultad de Medicina de LUZ</title>
 	<link rel="icon" type="image/png" href="/assets/img/logo-fmed-square-128.png" sizes="128x128" />
 	<link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/styles/index.css?ver=1.1">
+	<link rel="stylesheet" href="assets/styles/index.css?ver=1.2">
 	<script>
 	</script>
 </head>
@@ -58,11 +58,11 @@
 	<main class="main">
 		<section class="page-section main-section" id="inicio">
 			<picture class="picture-container" id="inscripcion">
-				<source srcset="assets/img/banner-congreso-mb.png" media="(max-width: 576px)">
-				<img src="assets/img/banner-congreso-ls (crop).png"
+				<source srcset="assets/img/banner-congreso-mb.webp" media="(max-width: 576px)">
+				<img src="assets/img/banner-congreso-ls (crop).webp"
 					alt="XIII Congreso Científico Internacional de la Facultad de Medicina" class="main-banner">
 			</picture>
-			<div class="btn-container d-flex d-none" id="programa-cientifico">
+			<div class="btn-container d-flex d-none">
 				<a href="#" id="inscripcionButton" target="_blank"
 					class="btn btn-light btn-registrarse">
 					Inscribirse
@@ -90,27 +90,64 @@
 
 					<p class="section-p">Lugar: Hotel Tibisay del Lago, Maracaibo, Edo. Zulia.</p>
 
-					<p class="section-p">Cualquier duda sobre el proceso de inscripción o trabajos libres, comunícate al número de contacto:  0424-6856979</p>
+					<p class="section-p">Cualquier duda sobre el proceso de inscripción o trabajos libres, comunícate al número de contacto: 
+						<a 
+							class="phone-link" 
+							href="https://api.whatsapp.com/send?phone=584246856979"
+							target="_blank"
+						>
+							0424-6856979
+						</a> 
+					</p>
 				
-					<p class="slogan-text">SALUD DIGITAL CON ROSTRO HUMANO</p>
+					<p class="slogan-text mb-4">SALUD DIGITAL CON ROSTRO HUMANO</p>
 					
 					<div class="cta-container">
 						<a class="inscripcion-btn btn btn-light" href="https://forms.gle/npveqmQHTzcNLqjL7" target="_blank">
-							Inscribirse
+							Inscríbete aquí
 						</a>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="page-section programa-cientifico" id="programa-cientifico">
+			<div class="info-container">
+				<h1 class="section-title d-none">Programa Científico</h1>
+				<div class="title-group">
+					<span class="upper-title">Programa</span>
+					<span class="lower-title">Científico</span>
+				</div>
+	
+				<a class="program-link" href="/assets/resources/PROGRAMA CIENTIFICO 2026.pdf" target="_blank">
+					<img 
+						src="/assets/img/Programa-Cientifico-2026.webp" 
+						alt="Programa Cientifico 2026" 
+						class="program-thumbnail"
+					>
+					<span class="hidden-help-text">Haga click para ver el Programa</span>
+				</a>
+	
+				<a 
+					class="download-btn btn btn-outline-light"
+					href="/assets/resources/PROGRAMA CIENTIFICO 2026.pdf"
+					download="PROGRAMA CIENTIFICO 2026"
+				>
+					Descargar Programa
+				</a>
 			</div>
 		</section>
 		<section class="page-section trabajos-libres" id="trabajos-libres">
 			<div class="info-container md">
 				<h2 class="section-title">Trabajos Libres</h2>
 
-				<p class="section-p">
+				<p class="section-p mb-4">
 					Nos complace anunciar la apertura de la recepción de trabajos libres científicos. Invitamos a investigadores, profesionales y estudiantes a presentar sus propuestas en diversas áreas de las Ciencias de la Salud.
 				</p>
+				<p class="section-p text-center fw-500 mb-2 mt-1">
+					Apertura: 13 de febrero de 2026. 
+				</p>
 				<p class="section-p text-center fw-semibold">
-					Apertura: 13 de Febrero de 2026 al 30 de Marzo 2026. 
+					<u>Fecha tope:</u> 27 de abril de 2026 a las 11:00 AM. 
 				</p>
 				<p class="section-p mb-sm">
 					El Trabajo Libre es una presentación de investigación original realizada por investigadores, profesionales o estudiantes de acuerdo a las normativas establecidas. Estos trabajos abordan temas relevantes y novedosos en el campo de la Medicina y la Salud. 
@@ -148,6 +185,7 @@
 				</div>
 			</div>
 		</section>
+		
 	</main>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
