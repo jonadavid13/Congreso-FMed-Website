@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/congresofmedluz/public_html
-    - /bin/rsync -av --exclude=.git * $DEPLOYPATH
+    - /bin/rsync -av --exclude=.git build/ $DEPLOYPATH
