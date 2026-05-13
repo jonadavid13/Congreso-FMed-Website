@@ -1,4 +1,4 @@
-import pdfPrograma from "../../assets/resources/PROGRAMA CIENTIFICO 2026.pdf"
+import pdfPrograma from '/resources/PROGRAMA-CIENTIFICO-2026.pdf'
 import coverProgramaCientifico from "../../assets/img/Programa-Cientifico-2026.webp"
 
 const ProgramaCientifico = () => {
