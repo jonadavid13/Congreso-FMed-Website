@@ -1,5 +1,6 @@
 import pdfNormativa from "../../assets/resources/NORMATIVA PARA TRABAJOS LIBRES 06-03-2026.pdf"
 import pdfFormatoTrabajos from "../../assets/resources/FORMATO  PARA TRABAJOS LIBRES.pdf"
+import formatoDiapositivas from "/resources/DIAPOSITIVAS-TRABAJOS-LIBRES.pptx?url"
 
 const TrabajosLibres = () => {
   return (
@@ -54,6 +55,13 @@ const TrabajosLibres = () => {
             target="blank"
 					>
             Formato para Trabajos Libres
+          </a>
+          <a 
+						className="std-btn btn btn-outline-light" 
+						href={formatoDiapositivas}
+            download="DIAPOSITIVAS TRABAJOS LIBRES"
+					>
+            Formato de Diapositivas
           </a>
         </div>
       </div>
