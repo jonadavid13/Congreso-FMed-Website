@@ -1,0 +1,72 @@
+.main.simulacion {
+    background-color: rgb(26, 85, 139);
+    min-height: calc(100dvh);
+    $borderColorForm: rgb(5, 40, 73);
+    $darkFontColor: rgb(2, 27, 51);
+
+    .form-register-simul {
+        display: flex;
+        flex-direction: column;
+				align-items: center;
+        border: rgb(5, 40, 73) solid 2px;
+        border-radius: 8px;
+        padding: 16px;
+        width: 100%;
+        max-width: 480px;
+        margin-top: 1rem;
+				margin-bottom: 2rem;
+        
+        .form-group {
+            width: 100%;
+						max-width: 320px;
+
+            .input-cedula {
+                background-color: inherit;
+                color: inherit;
+                border-color: $borderColorForm;
+            }
+            .input-cedula:focus {
+                background-color: inherit;
+                color: white;
+            }
+            .input-cedula::placeholder {
+                color: rgba(255, 255, 255, 0.65);
+            }
+        }
+
+        .submit-button {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          margin: 0 auto;
+          border-radius: 20px;
+          color: $darkFontColor;
+        }
+    }
+
+    .button-spinner {
+      $size: 18px;
+      width: $size;
+      height: $size;
+      color: $darkFontColor;
+      opacity: 0.9;
+    }
+
+    .alert {
+			width: 100%;
+			max-width: 380px;
+			padding: 10px 14px;
+			padding-right: 40px;
+
+			.alert-message {
+				margin-bottom: 2px;
+				text-align: start;
+			}
+
+			.btn-close {
+				padding: 0 12px;
+				height: 100%;
+				font-size: 15px;
+			}
+    }
+}

@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router";
 import { LandingPage } from "../pages/LandingPage";
 import { Enlaces } from "../pages/Enlaces";
 import { ProgramaRedirect } from "../pages/ProgramaRedirect";
+import { SalaSimulacion } from "../pages/SalaSimulacion";
 
 export const routes = [
 	{
@@ -13,6 +14,11 @@ export const routes = [
 		path: "/enlaces",
 		element: <Enlaces />,
 		active: false
+	},
+	{
+		path: "/sala-simulacion",
+		element: <SalaSimulacion />,
+		active: true
 	},
 	{
 		path: "/programa-cientifico",
