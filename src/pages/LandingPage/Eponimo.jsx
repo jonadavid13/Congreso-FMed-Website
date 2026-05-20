@@ -35,7 +35,8 @@ const Eponimo = () => {
             <img 
               src={eponimo_img} 
               alt="Epónimo Homenajeado - Dr. Domingo Bracho Díaz" 
-              className="eponimo-picture" 
+              className="eponimo-picture"
+              onContextMenu={(e) => e.preventDefault()} 
             />
 
             <div className="profile-text">

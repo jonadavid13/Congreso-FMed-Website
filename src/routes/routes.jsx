@@ -18,7 +18,7 @@ export const routes = [
 	{
 		path: "/sala-simulacion",
 		element: <SalaSimulacion />,
-		active: true
+		active: false
 	},
 	{
 		path: "/programa-cientifico",
