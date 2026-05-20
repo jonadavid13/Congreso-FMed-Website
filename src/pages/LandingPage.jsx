@@ -3,6 +3,8 @@ import { ProgramaCientifico } from "./LandingPage/ProgramaCientifico"
 import mainBanner from "../assets/img/banner-congreso-ls (crop).webp"
 import mainBannerMobile from "../assets/img/banner-congreso-mb.webp"
 import { TrabajosLibres } from "./LandingPage/TrabajosLibres"
+import { ScrollToHash } from "../functions/scrollToHash"
+import { Eponimo } from "./LandingPage/Eponimo"
 
 const LandingPage = () => {
   return (
@@ -57,8 +59,10 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
+        <Eponimo />
         <ProgramaCientifico />
         <TrabajosLibres />
+        <ScrollToHash />
       </main>
     </>
   )

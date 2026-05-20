@@ -1,0 +1,187 @@
+$ffOswald: 'Oswald', system-ui, sans-serif;
+$ffRaleway: 'Raleway', system-ui, sans-serif;
+$ffRamaraja: 'Ramaraja', system-ui, sans-serif;
+
+.page-section.eponimo {
+    $backgroundColor: #2150a7;
+    background-color: $backgroundColor;
+
+    .title-group {
+        margin-bottom: 2.4rem;
+
+        h2 { 
+            margin-bottom: 0; 
+        }
+    }
+
+    .semblanza-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        position: relative;
+        margin-bottom: 4rem;
+
+        .eponimo-profile-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
+            position: sticky;
+            top: 100px;
+            
+            .eponimo-picture {
+                max-width: 300px;
+                height: fit-content;
+                border-radius: .5rem;
+                box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+                position: -webkit-sticky;
+                margin-bottom: 16px;
+                // position: sticky;
+                // top: 100px;
+                // height: auto;
+            }
+
+            .profile-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    margin-bottom: 0;
+                }
+                .eponimo-name {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .semblanza-col {
+            flex: 1;
+        }
+
+        .text-container {
+            position: relative;
+            transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            margin-bottom: 16px;
+
+            .semblanza-title {
+                position: sticky;
+                top: 0;
+                background-color: $backgroundColor;
+                padding-bottom: 18px;
+                font-size: 22px;
+                line-height: 28px;
+                font-family: $ffOswald;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            &.collapsed {
+                max-height: 400px;
+                overflow: hidden;
+            }
+
+            &.expanded {
+                max-height: 500px;
+                overflow-y: auto;
+                padding-right: 15px;
+
+                // Personalización estética de la barra de scroll (Opcional)
+                &::-webkit-scrollbar {
+                  width: 6px;
+                }
+                &::-webkit-scrollbar-track {
+                  background: #183370;
+                  border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                  background: #12233f;
+                  border-radius: 10px;
+                }
+            }
+
+            .hidden-gradient {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 80px;
+                background: linear-gradient(transparent, $backgroundColor); // Desvanece hacia el fondo .bg-light
+                pointer-events: none; // Permite hacer clic a través del degradado
+                z-index: 2;
+            }
+        }
+
+        .btn-wrapper {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.2 ease
+        }
+    }
+
+    .invitacion-conferencia {
+        display: none; // DESACTIVADO
+        max-width: 540px;
+        text-align: center;
+
+        .conferencia-title {
+            margin: 24px 0;
+            font-style: italic;
+            font-size: 16.5px;
+        }
+    }
+
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 1.5rem;
+
+        .parent-group {
+            display: flex;
+            justify-content: center;
+        }
+        .icon-group {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            flex: 1;
+            width: fit-content;
+            min-width: 240px;
+        }
+
+        .group-col {
+            display: flex;
+            align-items: center;
+            
+            &:first-child {
+                width: 30px;
+                justify-content: center;
+            }
+
+            &:last-child {
+                flex: 1;
+                justify-content: flex-start;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-section.eponimo {
+        .semblanza-wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            .eponimo-profile-col {
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar } from "react-bootstrap"
+import { Link } from "react-router"
 
 const NavigationBar = () => {
   return (
@@ -10,13 +11,13 @@ const NavigationBar = () => {
         </div>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto gap-2">
-            <Nav.Link href="#inicio">Inicio</Nav.Link>
-            <Nav.Link href="#inscripciones">Inscripciones</Nav.Link>
-            <Nav.Link href="#eponimo">Epónimo</Nav.Link>
-            <Nav.Link href="#programa-cientifico">Programa Científico</Nav.Link>
-            <Nav.Link href="#trabajos-libres">Trabajos Libres</Nav.Link>
-            <Nav.Link href="#expo-facultad">Expo Facultad</Nav.Link>
-            <Nav.Link href="#contacto">Contacto</Nav.Link>
+            <Nav.Link as={Link} to="/#inicio">Inicio</Nav.Link>
+            <Nav.Link as={Link} to="/#inscripciones">Inscripciones</Nav.Link>
+            <Nav.Link as={Link} to="/#eponimo">Epónimo</Nav.Link>
+            <Nav.Link as={Link} to="/#programa-cientifico">Programa Científico</Nav.Link>
+            <Nav.Link as={Link} to="/#trabajos-libres">Trabajos Libres</Nav.Link>
+            <Nav.Link as={Link} to="/#expo-facultad">Expo Facultad</Nav.Link>
+            <Nav.Link as={Link} to="/#contacto">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
